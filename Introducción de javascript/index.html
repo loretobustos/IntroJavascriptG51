@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="miTitulo">¡Hola, Mundo!</h1>
+
+    <script>
+        // Obtener un elemento por su ID el getElementById se utiliza para seleccionar un elemento por su id
+        let miTitulo = document.getElementById("miTitulo");
+
+        // Crear un nuevo párrafo el createElement se utiliza para crear un nuevo elemento
+        let nuevoParrafo = document.createElement("p");
+
+        // Asignar texto al nuevo párrafo
+        nuevoParrafo.textContent = "Este es un nuevo párrafo.";
+
+        // Insertar el nuevo párrafo después del título el insertAdjacentElemnt se utiliza para insertar el nuevo elemento en el DOM
+        miTitulo.insertAdjacentElement('afterend', nuevoParrafo);
+    </script>
+<h2>getElementById, getElementsByClassName, getElementsByTagName o querySelector:</h2>
+<p>son para seleccionar elementos del DOM</p>
+<hr>
+<h2>createElement:</h2>
+<p>utiliza la fincion para crear nuevos elementos antes de insertarlos en el DOM</p>
+<hr>
+<h2>textContent o innerHTML</h2>
+<p>para utilizar el contenido de un elemento</p>
+<hr>
+<h2>insertAdjacentElement, appendChild y insertBefore</h2>
+<p>son para insertar elementos en diferentes lugares del DOM</p>
+<hr>
+
+    
+    
+    <script>
+        // Código JavaScript aquí
+        console.log("¡Hola, mundo!");
+    </script>
+    
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
